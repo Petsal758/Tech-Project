@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workouts</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Dark background */
+            color: #FFA500; /* Orange text color */
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 220px; /* Smaller width for the sidebar */
+            background-color: #1e1e1e;
+            color: #FFA500;
+            padding: 15px;
+            position: fixed;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border-right: 2px solid #FFA500;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar a {
+            color: #FFA500;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 8px 0;
+            text-align: center;
+            transition: background-color 0.3s;
+            margin-bottom: 10px; /* Reduced space between buttons */
+        }
+
+        .sidebar a:hover {
+            background-color: #FFA500;
+            color: #121212;
+            border-radius: 5px;
+        }
+
+        /* Main content */
+        .main-content {
+            margin-left: 220px; /* Adjusted content area to fit new sidebar width */
+            padding: 2rem;
+            width: 100%;
+            overflow-y: auto;
+        }
+
+        header {
+            background-color: #FFA500;
+            color: black;
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+        }
+
+        header img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .workout-card {
+            background-color: #1e1e1e;
+            color: #FFA500;
+            margin-bottom: 1rem;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(255, 165, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .workout-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(255, 165, 0, 0.7);
+        }
+
+        .workout-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .workout-card a {
+            text-decoration: none;
+            color: #FFA500;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .workout-card a:hover {
+            color: #ff8c00;
+        }
+
+        .workout-card p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 180px;
+            }
+
+            .main-content {
+                margin-left: 180px;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .workout-card h3 {
+                font-size: 1.2rem;
+            }
+
+            .workout-card p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: static;
+                padding: 15px;
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding: 1rem;
+            }
+
+            header h1 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Powerpulse</h2>
+        <a href="profile.php">Profile</a>
+        <a href="dashboard.php">Dashboard</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="get_diet_plans.php">Diet Plans</a>
+        <a href="update_progress.php">Update Progress</a>
+        <a href="logout.php">Log Out</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <header>
+            <img src="Tech project Logo.png" alt="Tech Project Logo">
+            <h1>Workouts</h1>
+        </header>
+
+        <div class="workout-card">
+            <h3><a href="search_chest.php">Chest</a></h3>
+            <p>A classic upper body workout targeting chest and triceps.</p>
+        </div>
+        <div class="workout-card">
+            <h3><a href="search_shoulders.php">Shoulders</a></h3>
+            <p>Strengthens your shoulders with exercises focusing on deltoids.</p>
+        </div>
+        <div class="workout-card">
+            <h3><a href="search_triceps.php">Triceps</a></h3>
+            <p>Exercises for triceps strength and arm definition.</p>
+        </div>
+        <div class="workout-card">
+            <h3><a href="search_leg.php">Legs</a></h3>
+            <p>Builds strength in your lower body, focusing on thighs and glutes.</p>
+        </div>
+        <div class="workout-card">
+            <h3><a href="search_back.php">Back</a></h3>
+            <p>Workouts to enhance back strength and posture.</p>
+        </div>
+        <div class="workout-card">
+            <h3><a href="search_full body.php">Full Body</a></h3>
+            <p>Full-body exercises for overall strength and endurance.</p>
+        </div>
+        <div class="workout-card">
+            <h3><a href="search_core.php">Core</a></h3>
+            <p>Stabilizing exercises focusing on core muscles.</p>
+        </div>
+        <div class="workout-card">
+            <h3><a href="search_cardio.php">Cardio</a></h3>
+            <p>Cardiovascular workouts to improve stamina and endurance.</p>
+        </div>
+        <div class="workout-card">
+            <h3><a href="search_biceps.php">Biceps</a></h3>
+            <p>Exercises targeting biceps for strength and definition.</p>
+        </div>
+    </div>
+</body>
+</html>

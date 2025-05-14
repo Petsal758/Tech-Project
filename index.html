@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPulse Gym</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            background-image: url('Work out Time #1.gif'); /* Background GIF */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+
+        header {
+            background-color: rgba(255, 165, 0, 0.8);
+            color: black;
+            padding: 1.5rem;
+            text-align: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .header-img {
+            width: 8%;  /* Reduced logo size */
+            height: auto;
+            display: block;
+            margin: 0 auto 1rem;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: white;
+            font-weight: 700;
+        }
+
+        nav {
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: orange;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: orange;
+            color: black;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            backdrop-filter: blur(5px);
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            width: 80%;
+            margin: 3rem auto;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: rgba(255, 165, 0, 0.8);
+            color: black;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .container p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 1.5rem;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .header-img {
+                width: 15%; /* Adjust logo size on smaller screens */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img class="header-img" src="Tech project Logo.png" alt="Tech Project Logo">
+        <h1>Welcome to PowerPulse Gym</h1>
+    </header>
+
+    <nav>
+        <a href="signup.php">Sign Up</a>
+        <a href="login.php">Log In</a>
+    </nav>
+
+    <div class="container">
+        <p>This Smart Gym and Exercise System is here to help you stay motivated, track your progress, and achieve your fitness goals. Whether you're a beginner or a fitness enthusiast, we've got you covered!</p>
+        <p>Explore our tailored workout routines, personalized diet plans, and BMI tracking tools to take control of your health journey.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 PowerPulse Gym. All rights reserved.</p>
+    </footer>
+</body>
+</html>
